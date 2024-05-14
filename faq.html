@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <!--.......... css link ......... -->
+    <link rel="stylesheet" href="demo.css">
+    <!-- google font...... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav section start......... -->
+    <nav class="nav-section">
+        <div class="container">
+            <div class="nav-item">
+                <a href="index.html">
+                    <div class="nav-logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT </a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!-- nav section end......... -->
+     <!-- banner section start ........... -->
+    <section class="banner">
+        <div class="banner-image">
+            <img src="" alt="">
+        </div>
+    </section>
+  <!-- banner section end ........... -->
+  <!-- real time section start.......... -->
+<section class="realtime-section">
+    <div class="container">
+        <div class="time">
+            <p id="datetime"></p>
+            <script>
+                setInterval(function(){
+                    document.getElementById('datetime').innerText=new Date().toLocaleString();
+                },1000);
+            </script>
+        </div>
+    </div>
+ </section>
+  <!-- real time section end.......... -->
+  <!-- footer section start ........ -->
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-text">
+            <p>made by @shupti 2024-2025 </p>
+        </div>
+    </div>
+  </footer>
+
+
+   <!-- footer section end........ -->
+</body>
+</html>
