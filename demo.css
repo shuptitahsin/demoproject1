@@ -1,20 +1,22 @@
 *{
     padding: 0;
     margin:0;
-    font-family: "Briem Hand", cursive;
+    font-family: "Open Sans", sans-serif;
+   
 }
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 25px;
+    padding:  0px 25px;
 }
 p{
     font-size: 15px;
     color: #333;
     line-height: 21px;
 }
+/* nav section.......start */
 .nav-item{
-    margin: 6px 0px;
+    margin: 10px 0px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -31,4 +33,152 @@ p{
     font-size: 20px;
     font-weight: 600;
     padding: 0px 20px;
+    transform: 0.4s ease-in-out;
 }
+.nav-item a:hover{
+    color: rgb(0,115, 225);
+}
+.owl-nav{
+    display: none;
+}
+.owl-dots{
+    padding: 5px 0px;
+}
+/* service section start........ */
+.service-section{
+    margin: 50px 0px;
+}
+.section-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-text h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.section-text p{
+    margin: 10px 0px;
+    padding: 0px 150px;
+}
+.section-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.section-main img{
+    width: 100%;
+}
+.section-item h3{
+color:rgb(0,115, 225) ;
+text-transform: uppercase;
+font-size: 20px;
+margin: 6px 0px;
+}
+.section-item p{
+    padding-bottom:10px ;
+    padding-right: 20px;
+}
+.section-item .btn1{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(0,115, 225);
+    transform: 0.4s ease-in-out;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn1:hover{
+    background-color:rgb(34, 34, 34) ;
+}
+/*service section end........  */
+/* gallery section start .......... */
+.gallery-section{ 
+    margin: 60px 0px;
+}
+.gallery-section h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom:40px ;
+}
+.gallery-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+.gallery-main img{
+    width: 100%;
+}
+
+
+
+
+
+/* gallery section end............ */
+/* feedback section start ............. */
+.feedback-section{
+    background-color:rgb(241, 235, 235);
+    padding: 50px 0px;
+}
+.feedback-text{
+   
+    text-align: center;
+}
+.feedback-text h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.feedback-text p{
+    margin: 15px 0px;
+    padding: 0px 150px;
+}
+.feedback-main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+}
+.feedback-item img{
+    border: none;
+    border-radius: 50%;
+}
+.feedback-item p{
+ padding: 5px 20px;
+}
+
+/* feedback section end ............. */
+/* -- real time section start.......... - */
+.realtime-section{
+    margin: 10px 0px;
+    
+}
+.time p{
+    color: rgb(0,115, 225);
+    text-align: center;
+}
+
+
+/* -- real time section end.......... - */
+/* footer section start */
+.footer-section{
+    background-color:rgb(34, 34, 34) ;
+}
+.footer-text p{
+    padding: 10px 0px;
+    color: #fff;
+    text-align: center;
+}
+/* footer section end */
