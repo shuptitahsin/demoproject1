@@ -15,11 +15,15 @@ p{
     line-height: 21px;
 }
 /* nav section.......start */
+.nav-section{
+    position: sticky;
+}
 .nav-item{
     margin: 10px 0px;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .nav-item ul{
     display: flex;
@@ -29,7 +33,7 @@ p{
 }
 .nav-item a{
     text-decoration: none;
-    color: black;
+    color: rgb(34, 34, 34);
     font-size: 20px;
     font-weight: 600;
     padding: 0px 20px;
@@ -37,12 +41,16 @@ p{
 }
 .nav-item a:hover{
     color: rgb(0,115, 225);
+    
 }
 .owl-nav{
     display: none;
 }
 .owl-dots{
     padding: 5px 0px;
+}
+.banner-image img{
+    width: 100%;
 }
 /* service section start........ */
 .service-section{
@@ -86,7 +94,7 @@ margin: 6px 0px;
     border: none;
     border-radius: 4px;
     background-color: rgb(0,115, 225);
-    transform: 0.4s ease-in-out;
+    transform: all 0.5s ease-in-out;
     font-size: 20px;
     text-align: left;
     padding-left: 5px;
@@ -99,6 +107,68 @@ margin: 6px 0px;
     background-color:rgb(34, 34, 34) ;
 }
 /*service section end........  */
+/* project section start........... */
+.project-section{
+    margin: 50px 0px;
+    padding: 50px 0px;
+    background-color:rgb(241, 235, 235);
+}
+.project-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.project-text h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+.project-text p{
+    margin: 10px 0px;
+    padding: 0px 150px;
+    text-align: center;
+}
+.project-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.project-item img{
+    width: 100%;
+}
+.project-item h3{
+    color:rgb(34, 34, 34) ;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 6px 0px;
+    transform:.5s ease-in-out ;
+}
+.project-item h3:hover{
+    color:rgb(0,115, 225) ;
+}
+.project-item p{
+    padding-bottom:10px ;
+    padding-right: 20px;
+}
+.project-item h5{
+    color: rgb(0,115, 225);
+}
+.btn2{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(0,115, 225);
+    color: #fff;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    transform:.5s ease-in-out ;
+}
+.btn2:hover{
+    background-color:rgb(34, 34, 34) ;
+}
+
+/* project section end........... */
 /* gallery section start .......... */
 .gallery-section{ 
     margin: 60px 0px;
@@ -121,10 +191,6 @@ margin: 6px 0px;
     width: 100%;
 }
 
-
-
-
-
 /* gallery section end............ */
 /* feedback section start ............. */
 .feedback-section{
@@ -132,7 +198,7 @@ margin: 6px 0px;
     padding: 50px 0px;
 }
 .feedback-text{
-   
+    
     text-align: center;
 }
 .feedback-text h2{
@@ -143,7 +209,7 @@ margin: 6px 0px;
 }
 .feedback-text p{
     margin: 15px 0px;
-    padding: 0px 150px;
+    padding: 0px 180px;
 }
 .feedback-main{
     display: flex;
@@ -154,12 +220,265 @@ margin: 6px 0px;
 .feedback-item img{
     border: none;
     border-radius: 50%;
+    vertical-align: middle;
+    display:inline;
 }
 .feedback-item p{
- padding: 5px 20px;
+    padding: 5px 20px;
+}
+/* feedback section end ............. */
+
+
+/* another section start................... */
+/* about page  start................ */
+.about-us{
+    margin: 50px 0px;
+    padding: 50px 0px;
+}
+.about-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.right-item img{
+    width: 100%;
+}
+.left-item h2{
+    font-size: 30px;
+    color:rgb(0,115, 225)  ;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.left-item p{
+    margin: 20px 0px;
+    padding-right:40px ;
+    
+}
+.left-item a{
+    text-decoration: none;
+    color: rgb(0,115, 225);
+    font-size: 20px;
+}
+.btn3{
+    margin-top: 30px;
+    width: 170px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+}
+/* <!-- emplyee section start...... --> */
+.emplyee-section{
+margin-bottom: 50px;
+}
+.emplyee-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.emplyee-text h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.emplyee-text p{
+    margin: 15px 0px;
+    padding: 0px 180px;
+}
+.emplyee-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+.emplyee-item img{
+    width: 100%;
+}
+.emplyee-item h6{
+    color: rgb(0,115, 225);
+    margin: 5px 0px ;
+    font-size: 30px;
+}
+.emplyee-item h5{
+    color: #333;
+}
+.emplyee-item p{
+    padding: 5px 20px;
+}
+.emplyee-icon{
+    margin: 5px 0px;
+    color: #333;
+    font-size: 20px;
+   
+} 
+.emplyee-icon i{
+    padding: 0px 10px;
+}
+/* <!-- emplyee section end...... --> */
+/* about page  end................ */
+
+/* another page start Contact page ............... */
+/* contact page .......start........... */
+.contact-section{
+    margin: 60px 0px;
+}
+.contact-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.contact-left{
+    background-color:rgb(241, 235, 235) ;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-left h3{
+    color: rgb(0,115, 225);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.form-section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
 
-/* feedback section end ............. */
+ .form-mail input{
+    margin-top: 20px;
+  width: 450px;  
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+ padding-left: 10px;
+}
+ .form-name input{
+    margin-top: 20px;
+    width: 450px;  
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+   padding-left: 10px;
+}
+.form-msg input{
+    margin-top: 20px;
+    width: 450px;  
+    padding-bottom: 100px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+ .btn4{
+    background-color:rgb(0,115, 225);
+    margin-top: 20px;
+    height: 40px;
+    width: 160px;
+    border: none;
+    border-radius: 6px;
+    transform:.5s ease-in-out ;
+    
+}
+.btn4 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.btn4:hover{
+    background-color:#898989;
+    color: rgb(0,115, 225);
+}
+.form-style input:focus{
+    outline: none;
+}
+.contact-right{
+    background-color:rgb(241, 235, 235) ;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-right h3{
+    color: rgb(0,115, 225);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+ .address  h4{
+    color: #333;
+    font-size: 22px;
+    padding: 6px 0px;
+}
+.address p{
+    padding-bottom: 10px;
+}
+.open  h4{
+    color: #333;
+    font-size: 22px;
+    padding: 6px 0px;
+}
+.open p{
+    padding-bottom: 10px;
+}
+.info  h4{
+    color: #333;
+    font-size: 22px;
+    padding: 6px 0px;
+}
+.info p{
+    padding-bottom: 10px;
+}
+.follow  h4{
+    color: #333;
+    font-size: 22px;
+    padding: 6px 0px;
+}
+.follow-icon{
+    color: #333;
+    font-size: 25px;
+    transform:.5s ease-in-out ;
+}
+.follow-icon i{
+    color: #333;
+    padding: 10px 15px;
+    transform:.5s ease-in-out ;
+}
+.follow-icon i:hover{
+    color: rgb(0,115, 225);
+}
+
+/* <!-- ..........location start......... --> */
+.location h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+    margin: 50px;
+    text-align: center;
+}
+.location iframe{
+    width: 100%;
+    text-align: center;
+}
+/* contact page ......end........... */
+
+
+/* another page start .................... */
+/* faq page start.................... */
+.fqa-text h2{
+    color:rgb(0,115, 225) ;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 600;
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* faq page end.................... */
+
 /* -- real time section start.......... - */
 .realtime-section{
     margin: 10px 0px;
@@ -169,8 +488,6 @@ margin: 6px 0px;
     color: rgb(0,115, 225);
     text-align: center;
 }
-
-
 /* -- real time section end.......... - */
 /* footer section start */
 .footer-section{
